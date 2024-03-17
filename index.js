@@ -1,6 +1,7 @@
 let display = document.getElementById("display");
 
-
+console.log(display);
+console.log(display);
 function appendToDisplay(element){
     display.value += element;
  }
@@ -14,6 +15,7 @@ function appendToDisplay(element){
     }
  }
 
-function c(){
-    display.value = "";
-}
+ let clear = document.getElementById("clear");
+ clear.addEventListener("click", () => {
+                                display.value = " ";
+                                }, false);
